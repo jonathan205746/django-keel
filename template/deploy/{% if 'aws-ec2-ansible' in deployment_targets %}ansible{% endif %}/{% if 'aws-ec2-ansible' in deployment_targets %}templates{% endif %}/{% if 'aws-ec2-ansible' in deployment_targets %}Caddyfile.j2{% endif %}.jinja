@@ -1,9 +1,0 @@
-{% raw %}{{ domain_name }}{% endraw %} {
-    reverse_proxy localhost:8000
-
-    encode gzip
-
-    log {
-        output file /var/log/caddy/{{ project_slug }}.log
-    }
-}
